@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.blitz.platzigram">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +28,13 @@
                 android:value=".LoginActivity" />
             <!-- in this way we add support to versions of android prior to lollipop -->
         </activity>
-        <activity android:name=".view.ContainerActivity"></activity>
+        <activity android:name=".view.ContainerActivity" />
+        <activity android:name=".view.PictureDetailActivity"
+            android:parentActivityName=".view.ContainerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ContainerActivity" />
+        </activity>
     </application>
 
 </manifest>
