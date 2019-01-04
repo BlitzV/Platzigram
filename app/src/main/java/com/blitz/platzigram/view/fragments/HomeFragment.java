@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home,container,false);
-        showToolbar("Home", false, view);
+        showToolbar(getResources().getString(R.string.title_home), false, view);
         RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.pictureRecycler);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
@@ -51,11 +51,11 @@ public class HomeFragment extends Fragment {
     public ArrayList<Picture> buildPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
         pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "Freddy Villegas",
-                "4 dias","3"));
+                "4 dias","3 Me gusta"));
         pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "Karen Villegas",
-                "10 dias","5"));
+                "10 dias","5 Me gusta"));
         pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Katiuska Villegas",
-                "6 dias","1"));
+                "6 dias","1 Me gusta"));
         return  pictures;
     }
 

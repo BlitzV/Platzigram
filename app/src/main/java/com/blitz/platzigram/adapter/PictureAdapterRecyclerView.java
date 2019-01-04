@@ -1,6 +1,7 @@
 package com.blitz.platzigram.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 import com.blitz.platzigram.R;
 import com.blitz.platzigram.model.Picture;
+import com.blitz.platzigram.view.PictureDetailActivity;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         this.pictures = pictures;
         this.resource = resource;
         this.activity = activity;
+        // lo que pasa en activity es el contexto
     }
 
     @NonNull
@@ -37,10 +41,20 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
     @Override
     public void onBindViewHolder(@NonNull PictureViewHolder pictureViewHolder, int i) {
         //aqui se trabajara toda la lista del arreglo
+        // tenemos acceso a cada view, añadir onclicks, setear datos
         Picture picture = pictures.get(i);
         pictureViewHolder.userNameCard.setText(picture.getUserName());
         pictureViewHolder.timeCard.setText(picture.getTime());
         pictureViewHolder.likeNumberCard.setText(picture.getLike_number());
+        Picasso.with(activity).load(picture.getPicture()).into(pictureViewHolder.pictureCard);
+
+        pictureViewHolder.pictureCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (activity, PictureDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override
