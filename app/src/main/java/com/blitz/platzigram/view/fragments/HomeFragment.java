@@ -56,6 +56,7 @@ public class HomeFragment extends Fragment {
                 "10 dias","5 Me gusta"));
         pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Katiuska Villegas",
                 "6 dias","1 Me gusta"));
+
         return  pictures;
     }
 
