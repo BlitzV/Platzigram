@@ -15,7 +15,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        //prueba de cambios nuevos
     }
 
     public void goCreateAccount(View view){

@@ -98,7 +98,7 @@
         app:dependType="y"
         app:dependTargetY="@dimen/limitY_usernametoolbarprofile"
         app:targetY="@dimen/margintoptargety_usernametoolbarprofile"
-        app:targetAlpha="10"
+        app:targetAlpha="7"
         tools:ignore="MissingPrefix" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
