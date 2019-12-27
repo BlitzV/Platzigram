@@ -12,7 +12,7 @@
     <string name="hint_confirm_password">Confirm password</string>
     <string name="text_button_join">Join</string>
     <string name="toolbar_title_createaccount">Create account</string>
-    <string name="username_card">Freddy Villegas</string>
+    <string name="username_card">Username</string>
     <string name="firstword_card">Ago</string>
     <string name="timecard_card">4 days</string>
     <string name="likenumbercard_cardview">10 like</string>
@@ -20,10 +20,10 @@
     <string name="title_search">Search</string>
     <string name="title_profile">User</string>
     <string name="ten">10</string>
-    <string name="secondword_detail">Me gusta</string>
+    <string name="secondword_detail">Like</string>
     <string name="titleimagedetail">\"Espacio de titulo de imagen\"</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="empty" />
     <string name="transitonname_picture">transition</string>
-    <string name="searchhinttext">Buscar</string>
+    <string name="searchhinttext">Search</string>
 </resources>

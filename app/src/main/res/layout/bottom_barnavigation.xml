@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.design.widget.BottomNavigationView
+<com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/navigation"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
@@ -15,4 +15,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.design.widget.BottomNavigationView>
+</com.google.android.material.bottomnavigation.BottomNavigationView>

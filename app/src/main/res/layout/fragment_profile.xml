@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     tools:context=".view.fragments.ProfileFragment">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarProfile"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:background="@color/colorPrimary"
         android:fitsSystemWindows="true">
 
-        <android.support.design.widget.CollapsingToolbarLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsingToolbarprofile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,18 +46,18 @@
 
             </LinearLayout>
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toobarprofile"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-        </android.support.design.widget.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/pictureProfileRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -80,21 +80,16 @@
         app:targetWidth="@dimen/width_circleimagetoolbar"
         app:targetHeight="@dimen/width_circleimagetoolbar"/>
 
-    <!-- las "app" vienen de la libreria agregada
-
-    implementation 'com.zoonref:simple-view-behavior:1.0'
-
--->
-
     <TextView
         android:id="@+id/usernameToolbarProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/username_card"
-        android:textSize="@dimen/textsize_usernameToolbarProfile"
+        android:textSize="18sp"
         android:elevation="@dimen/elevation_circleimageprofile"
         android:layout_marginLeft="@dimen/marginleft_usenametoolbarprofile"
-        android:layout_marginTop="@dimen/margintop_usernametoolbarprofile"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:gravity="center_vertical"
         android:textColor="@android:color/white"
         android:alpha="0"
@@ -103,8 +98,8 @@
         app:dependType="y"
         app:dependTargetY="@dimen/limitY_usernametoolbarprofile"
         app:targetY="@dimen/margintoptargety_usernametoolbarprofile"
-        app:targetAlpha="1"
+        app:targetAlpha="10"
         tools:ignore="MissingPrefix" />
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 

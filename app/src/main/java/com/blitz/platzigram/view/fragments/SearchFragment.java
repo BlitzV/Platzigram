@@ -3,12 +3,13 @@ package com.blitz.platzigram.view.fragments;
 
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blitz.platzigram.R;
 import com.blitz.platzigram.adapter.PictureAdapterRecyclerView;
@@ -16,9 +17,6 @@ import com.blitz.platzigram.model.Picture;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class SearchFragment extends Fragment {
 
     public SearchFragment() {
@@ -51,17 +49,17 @@ public class SearchFragment extends Fragment {
 
     public ArrayList<Picture> buildPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "Freddy Villegas",
+        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "User1",
                 "4 dias","3 Me gusta"));
-        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "Karen Villegas",
+        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "User2",
                 "10 dias","5 Me gusta"));
-        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Katiuska Villegas",
+        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "user3",
                 "6 dias","1 Me gusta"));
-        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "Freddy Villegas",
+        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "User1",
                 "4 dias","3 Me gusta"));
-        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "Karen Villegas",
+        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "User2",
                 "10 dias","5 Me gusta"));
-        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Katiuska Villegas",
+        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "3",
                 "6 dias","1 Me gusta"));
         return  pictures;
     }

@@ -1,13 +1,14 @@
 package com.blitz.platzigram.view;
 
 import android.os.Build;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.transition.Fade;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.blitz.platzigram.R;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 public class PictureDetailActivity extends AppCompatActivity {
 

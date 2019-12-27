@@ -1,10 +1,10 @@
 package com.blitz.platzigram.view;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -12,6 +12,7 @@ import com.blitz.platzigram.R;
 import com.blitz.platzigram.view.fragments.HomeFragment;
 import com.blitz.platzigram.view.fragments.ProfileFragment;
 import com.blitz.platzigram.view.fragments.SearchFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ContainerActivity extends AppCompatActivity {
 
